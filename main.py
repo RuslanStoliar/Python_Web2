@@ -6,12 +6,7 @@ sys.path.insert(0, dir_path)
 from pyfiglet import Figlet
 from bot_commands import COMMANDS
 from book_commands import find_same_input
-from flask import Flask
 
-app = Flask(__name__)
-
-
-@app.route("/")
 def main():
     '''
     A console bot assistant that recognizes commands entered from the
@@ -40,4 +35,4 @@ def main():
 
 
 if __name__ == '__main__':
-    app.run(debug=False, host="0.0.0.0")
+    main()
